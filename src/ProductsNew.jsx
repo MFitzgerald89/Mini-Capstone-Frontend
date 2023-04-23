@@ -18,6 +18,9 @@ export function ProductsNew(props) {
         <div>
           Description: <input name="description" type="text" />
         </div>
+        <div>
+          Supplier: <input name="supplier_id" type="number" />
+        </div>
         <button className="btn btn-dark" type="submit">
           Add Product
         </button>
