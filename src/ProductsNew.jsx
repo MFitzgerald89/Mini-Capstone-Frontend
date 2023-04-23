@@ -2,11 +2,11 @@ export function ProductsNew(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const params = new FormData(event.target);
-    props.onNewProduct(params, () => event.target.reset());
+    props.onCreateProduct(params);
   };
 
   return (
-    <div>
+    <div id="products-new">
       <h1>New Product</h1>
       <form onSubmit={handleSubmit}>
         <div>
